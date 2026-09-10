@@ -1,22 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Cellary is a new software company focused on making the messy work between systems simpler.">
-<title>Cellary — Under construction...</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cellary</title>
+<meta name="description" content="Cellary. Under construction.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300..600&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#f4efdf;--ink:#10392d;--yellow:#f4c83f;--pink:#eba5c1;--orange:#f05a38;--green:#155c3d;--lavender:#b79bd3;--blue:#77b9d5}*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--cream);color:var(--ink)}body{font-family:Arial,Helvetica,sans-serif}.page{min-height:100svh;position:relative;overflow:hidden;display:grid;grid-template-rows:auto 1fr auto;padding:28px 5vw 25px;isolation:isolate}.page:after{content:"";position:absolute;inset:0;z-index:30;pointer-events:none;opacity:.25;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.48'/%3E%3C/svg%3E");mix-blend-mode:multiply}header,footer{position:relative;z-index:20;display:flex;align-items:center;justify-content:space-between}.brand{font-family:Georgia,'Times New Roman',serif;font-size:31px;font-weight:700;letter-spacing:-1.5px}.contact{font-size:13px;color:inherit;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}main{display:flex;align-items:center;position:relative;z-index:10}.copy{position:relative;z-index:15;max-width:830px;padding:5vh 0}h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(72px,10vw,158px);line-height:.79;letter-spacing:-.07em;font-weight:500;margin:0;max-width:7.2ch}.desc{font-size:clamp(16px,1.35vw,21px);line-height:1.48;max-width:490px;margin:38px 0 0}.art{position:absolute;inset:0;z-index:1}.shape{position:absolute;filter:saturate(1.08)}.yellow{width:54vw;height:42vw;left:12vw;top:-31vw;background:var(--yellow);border-radius:50%}.pink{width:49vw;height:44vw;right:10vw;top:15%;background:var(--pink);border-radius:60% 40% 56% 44%/48% 59% 41% 52%;transform:rotate(17deg)}.orange{width:31vw;height:82%;right:-2vw;top:0;background:var(--orange);transform:rotate(3deg)}.green{width:58vw;height:28vw;left:-14vw;bottom:-13vw;background:var(--green);border-radius:50% 58% 0 0/65% 75% 0 0;transform:rotate(6deg)}.lavender{width:18vw;height:28vw;right:-8vw;top:8%;background:var(--lavender);border-radius:55% 0 0 55%}.blue{width:18vw;height:18vw;right:7vw;bottom:-5vw;background:var(--blue);border-radius:50%}.shadow{position:absolute;right:5%;top:2%;width:39vw;height:100%;opacity:.18;background:repeating-linear-gradient(115deg,transparent 0 38px,var(--ink) 40px 47px,transparent 49px 85px);filter:blur(9px);transform:rotate(-9deg)}footer{font-size:10px;text-transform:uppercase;letter-spacing:.12em}.copyright{opacity:.75}@media(max-width:760px){.page{padding:22px 20px 20px}.brand{font-size:26px}main{align-items:flex-start;padding-top:15vh}.copy{padding:0}h1{font-size:clamp(67px,20vw,100px);max-width:6.5ch}.desc{font-size:16px;max-width:340px;margin-top:28px}.yellow{width:95vw;height:65vw;left:10vw;top:-42vw}.pink{width:90vw;height:80vw;right:-42vw;top:35%}.orange{width:45vw;height:62%;right:-25vw;top:30%}.green{width:100vw;height:45vw;left:-35vw;bottom:-12vw}.lavender{width:34vw;height:48vw;right:-17vw;top:8%}.blue{width:34vw;height:34vw;right:5vw;bottom:-15vw}.shadow{width:70vw;right:-20vw}footer{font-size:9px}}
+  :root {
+    --ink: #1b1830;
+    --muted: rgba(27, 24, 48, 0.62);
+    --rule: rgba(27, 24, 48, 0.16);
+
+    --coral: #f4696e;
+    --blush: #e5a3b4;
+    --haze: #efedf4;
+    --peri: #7c7bee;
+    --orchid: #ee8ff8;
+    --cornflower: #7e9cf5;
+
+    --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--blush);
+    color: var(--ink);
+    font-family: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .backdrop,
+  .backdrop::before,
+  .backdrop::after {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .backdrop {
+    z-index: -1;
+    background:
+      radial-gradient(78% 62% at 12% 82%, var(--coral) 0%, rgba(244, 105, 110, 0) 64%),
+      radial-gradient(64% 52% at 4% 2%, var(--haze) 0%, rgba(239, 237, 244, 0) 60%),
+      radial-gradient(70% 58% at 72% 0%, var(--peri) 0%, rgba(124, 123, 238, 0) 64%),
+      radial-gradient(58% 62% at 102% 40%, var(--orchid) 0%, rgba(238, 143, 248, 0) 66%),
+      radial-gradient(62% 52% at 94% 104%, var(--cornflower) 0%, rgba(126, 156, 245, 0) 64%),
+      linear-gradient(104deg, var(--blush) 0%, #c9bce9 54%, #bfa2ec 100%);
+  }
+
+  .backdrop::before {
+    content: "";
+    background-image: var(--grain);
+    background-size: 180px 180px;
+    mix-blend-mode: overlay;
+    opacity: 0.36;
+  }
+
+  .backdrop::after {
+    content: "";
+    background-image: var(--grain);
+    background-size: 340px 340px;
+    mix-blend-mode: soft-light;
+    opacity: 0.55;
+  }
+
+  .shell {
+    min-height: 100vh;
+    min-height: 100dvh;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 40px 32px 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 72px;
+  }
+
+  a {
+    color: var(--ink);
+    text-decoration-color: rgba(27, 24, 48, 0.35);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+  }
+
+  a:hover { text-decoration-color: var(--ink); }
+
+  a:focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
+  .mark {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(1.75rem, 6.4vw, 3.6rem);
+    font-weight: 400;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 0.52em;
+    height: 0.95em;
+    margin-left: 0.14em;
+    background: var(--ink);
+    vertical-align: -0.08em;
+    animation: blink 1.15s step-end infinite;
+  }
+
+  @keyframes blink {
+    0%, 48% { opacity: 1; }
+    49%, 100% { opacity: 0; }
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 32px;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cursor { animation: none; }
+  }
 </style>
 </head>
 <body>
-<div class="page">
-<header><div class="brand">Cellary</div><a class="contact" href="mailto:jackgif.business@gmail.com">Contact ↗</a></header>
-<main>
-<section class="copy"><h1>Under construction...</h1><p class="desc">Cellary is a new software company focused on making the messy work between systems simpler.</p></section>
-<div class="art" aria-hidden="true"><div class="shape yellow"></div><div class="shape pink"></div><div class="shape orange"></div><div class="shape green"></div><div class="shape lavender"></div><div class="shape blue"></div><div class="shadow"></div></div>
-</main>
-<footer><span>Columbus, Ohio · 2026</span><span class="copyright">Cellary</span></footer>
-</div>
+
+  <div class="backdrop" aria-hidden="true"></div>
+
+  <div class="shell">
+    <header>
+      <p class="mark">Cellary</p>
+    </header>
+
+    <main>
+      <h1>under construction<span class="cursor" aria-hidden="true"></span></h1>
+    </main>
+
+    <footer>
+      <a href="mailto:hello@cellary.net">hello@cellary.net</a>
+      <span>Columbus, Ohio. 2026.</span>
+    </footer>
+  </div>
+
 </body>
 </html>
